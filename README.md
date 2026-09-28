@@ -243,4 +243,3 @@ Order management
 Order tracking
 Customer reviews
 
-for this text make it look attractive
