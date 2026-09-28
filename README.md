@@ -1,51 +1,178 @@
-# RasoiHub: Your Home Kitchen
+RasoiHub – Home Chef Marketplace
 
-Build a modern, startup-grade food marketplace web app called "RasoiHub" with the tagline "From Home Kitchens to Your Table".
+RasoiHub is a web-based Home Chef Marketplace that connects customers with home chefs. Home chefs can list homemade food items, while customers can browse food, place orders, track orders and give reviews.
 
-Brand & Styling:
-- Palette: Deep terracotta / burnt orange, warm cream, dark charcoal, muted sage green accent.
-- Premium, warm, food-inspired aesthetic with high quality food photography (no emojis for food images), rounded cards, subtle shadows, and clean modern typography.
+From Home Kitchens to Your Table
 
-Key Capabilities & Architecture:
-- Built with modular React, TypeScript, Tailwind CSS, Lucide icons, and persistent state in localStorage so added dishes, placed orders, status updates, and reviews persist across refreshes.
-- Dual-role support (Customer and Home Chef) with an intuitive role switcher or dedicated navigation pathways for testing and viva presentation.
+Developed as an academic project for BCA 'C' – 2nd Year, Mount Carmel University (Academic Year 2026–27).
 
-Customer Flow:
-1. Landing Page: Hero section with headline "Homemade Food. Made by People You Can Trust.", search bar, quick category pills, "Why RasoiHub" feature cards, "How It Works" 4-step process, featured dishes, and customer testimonials.
-2. Explore Food: Search by dish/chef/cuisine, category filter tabs (All, Breakfast, Lunch, Dinner, Snacks, Desserts), rich cards showing food photo, name, chef name, rating, price (₹), and "Add to Cart" / "View Details".
-3. Food Details View: Large image, price, rating, ingredients/description, quantity selector, chef profile card (chef photo, specialty, location, dishes count), and customer reviews.
-4. Cart & Checkout: Slide-over or page cart with item totals, quantity controls, and mock checkout capturing customer delivery details (Name, Phone, Delivery Address) resulting in an instant order confirmation.
-5. Visual Order Tracking: Step-by-step progress bar tracking real statuses: Order Placed → Order Accepted → Preparing → Ready → Completed.
-6. Reviews: 5-star rating selector and feedback submission for completed orders that updates the food item and chef ratings.
+Technologies Used
+Frontend
+React.js
+Vite
+TypeScript
+Tailwind CSS
+Backend
+Node.js
+Express.js
+REST API
+Database
+MySQL
+MySQL Workbench
+Database: rasoihub
+Source Code
+GitHub
+Development Tools
+Component	Tool
+Frontend	React + Vite
+Backend	Node.js + Express
+Database	MySQL
+Code Editor	Visual Studio Code
+Source Code	GitHub
+System Architecture
 
-Chef Flow:
-1. Become a Chef & Login: Registration form capturing Chef Name, Specialty, Experience, Location, Bio, and Profile Photo.
-2. Chef Dashboard: Stat cards (Total Food Items, Active Orders, Completed Orders, Average Rating), quick actions, and recent activity.
-3. Add Food: Full form including Food Name, Description, Category, Price (₹), Preparation Time, Available Quantity, and custom Food Image upload (FileReader data URL / preview).
-4. My Menu: Chef dish management grid with Edit and Delete options.
-5. Customer Orders Management: Live list of customer orders with one-click actions to advance status (Placed → Accepted → Preparing → Ready → Completed), which automatically syncs with the customer's order tracker.
+User → React Frontend → Node.js + Express Backend → MySQL Database (rasoihub)
 
-General Pages:
-- About Us, How It Works, Authentication modals/pages, and a polished responsive footer.
-- Clean, beginner-friendly code organization with helpful comments for a BCA college presentation.
+Team Members
+Reg No.	Name	Contribution
+MS254253	Yash Choudhary	Frontend & UI Development
+MS254205	Arvind Prajapat	Backend & API Development
+MS254240	Sanjay Choudhary	Database & Integration
+Main Features
+Customer
+User Registration
+User Login
+Browse Homemade Food
+Food Details
+Add to Cart
+Place Orders
+Order Tracking
+Ratings and Reviews
+Home Chef
+Chef Registration
+Chef Dashboard
+Add Food
+Manage Menu (Edit / Delete Food)
+Manage Food Availability
+View Customer Orders
+Update Order Status
+Order Status Flow
 
-This project was built with [Lovable](https://lovable.dev).
+Placed → Accepted → Preparing → Ready → Completed
 
-## Build with Lovable
+Database Tables
+Table	Purpose
+users	Stores customer and chef accounts
+chef_profiles	Stores additional chef information
+foods	Stores food items listed by chefs
+orders	Stores customer orders
+order_items	Stores individual items in orders
+reviews	Stores customer ratings and reviews
+Screenshots
+Home Page
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/85bda2ce-e69e-4f4c-a2ea-3007817ca8f6).
+C:\Users\hp\Desktop\web-screenshots\01-Home.png
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Explore Food
 
-## Development
+Show Image
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Food Details
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+Show Image
+
+Login
+
+Show Image
+
+Register
+
+Show Image
+
+Chef Dashboard
+
+Show Image
+
+My Menu
+
+Show Image
+
+Add Food
+
+Show Image
+
+Edit Dish
+
+Show Image
+
+Cart
+
+Show Image
+
+Order Confirmation
+
+Show Image
+
+Order Tracking
+
+Show Image
+
+Reviews
+
+Show Image
+
+Show Image
+
+How It Works
+
+Show Image
+
+Chef Orders
+
+Show Image
+
+Database Screenshots
+Users Table
+
+Show Image
+
+Foods Table
+
+Show Image
+
+Orders Table
+
+Show Image
+
+Order Items Table
+
+Show Image
+
+Reviews Table
+
+Show Image
+
+Project Structure
+RasoiHub/
+├── backend/
+│   ├── config/
+│   │   └── db.js
+│   ├── routes/
+│   ├── package.json
+│   └── server.js
+├── src/
+├── public/
+├── screenshots/
+├── .gitignore
+├── package.json
+└── README.md
+Run Locally
+bash
+# Frontend
+npm install
 npm run dev
-```
+
+# Backend
+cd backend
+npm install
+node server.js
