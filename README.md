@@ -172,13 +172,8 @@ The backend is developed using Node.js and Express.js.
 It is responsible for handling API requests, application logic and communication with the MySQL database.
 
 Backend Structure
-backend/
-├── config/
-│   └── db.js
-├── routes/
-├── .env
-├── package.json
-└── server.js
+
+backend/ → config/db.js | routes/ | .env | package.json | server.js
 
 🗄️ MySQL Database
 
@@ -194,19 +189,7 @@ orders	Stores customer orders
 order_items	Stores individual items in orders
 reviews	Stores customer ratings and reviews
 chef_profiles	Stores additional chef information
-🔗 Database Relationships
-Users
- │
- ├── Foods
- │
- ├── Chef Profiles
- │
- └── Orders
-        │
-        └── Order Items
-               │
-               └── Foods
-
+USERS → FOODS | CHEF_PROFILES | ORDERS → ORDER_ITEMS | REVIEWS
 Users ───── Reviews ───── Foods
 
 The database uses primary keys and foreign keys to maintain relationships between the tables.
